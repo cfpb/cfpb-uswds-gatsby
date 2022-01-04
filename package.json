@@ -1,18 +1,17 @@
 {
-  "name": "federalist-uswds-gatsby",
-  "description": "A Federalist template using USWDS 2.0 + Gatsby",
+  "name": "cfpb-uswds-gatsby",
+  "description": "CFPB + USWDS 2.0 + Gatsby",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "clean": "rimraf .cache public _site",
     "build": "gatsby build",
     "reset": "npx rimraf .git",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
-    "federalist": "npm run federalist:build && npm run federalist:copy",
-    "federalist:build": "gatsby build --prefix-paths",
-    "federalist:copy": "mkdir -p _site && rm -rf _site/* && cp -r public/* _site/"
+    "deploy": "BASEURL=/cfpb-uswds-gatsby gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^2.29.3",
@@ -30,15 +29,15 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "uswds": "^2.10.1"
+    "uswds": "https://github.com/cfpb/uswds.git#cfpb"
   },
   "devDependencies": {
     "eslint-config-react-app": "^5.2.1",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2"
   },
   "engines": {
-    "node": "14.x.x",
-    "npm": "6.x.x"
+    "node": "14.17.x"
   }
 }

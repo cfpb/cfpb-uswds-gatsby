@@ -13,19 +13,18 @@ const Footer = () => (
               </a>
             </div>
           </div>
-          <div className="tablet:grid-col"></div>
           <div className="tablet:grid-col">
             <ul className="add-list-reset">
-              <li>Footer link</li>
-              <li>Footer link</li>
-              <li>Footer link</li>
+              <li>FOIA</li>
+              <li>Privacy</li>
+              <li>Website Privacy Policy</li>
             </ul>
           </div>
           <div className="tablet:grid-col">
             <ul className="add-list-reset">
-              <li>Footer link</li>
-              <li>Footer link</li>
-              <li>Footer link</li>
+              <li>Data</li>
+              <li>Open Government</li>
+              <li>Information Quality Guidelines</li>
             </ul>
           </div>
         </div>

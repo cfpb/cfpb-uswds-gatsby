@@ -34,22 +34,14 @@ const SearchForm = ({ navigation, secondaryLinks }) => {
   };
 
   return (
-    <form className="usa-search usa-search-small" onSubmit={handleSubmit}>
-      <div role="search">
-        <label className="usa-sr-only" htmlFor="extended-search-field-small">
-          Search small
-        </label>
-        <input
-          className="usa-input usagov-search-autocomplete"
-          id="extended-search-field-small"
-          type="search"
-          name="query"
-          autoComplete="off"
-        />
-        <button className="usa-button" type="submit">
-          <span className="usa-sr-only">Search</span>
-        </button>
-      </div>
+    <form className="usa-search usa-search--small" role="search">
+      <label className="usa-sr-only" for="extended-search-field-en-small">
+        Search
+      </label>
+      <input className="usa-input" id="extended-search-field-en-small" type="search" name="search" />
+      <button className="usa-button" type="submit">
+        <img src="https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/develop/dist/img/usa-icons-bg/search--white.svg" className="usa-search__submit-icon" alt="Search" />
+      </button>
     </form>
   );
 };

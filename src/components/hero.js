@@ -9,16 +9,12 @@ const Hero = () => (
     <div className="grid-container">
       <div className="usa-hero__callout">
         <h2 className="usa-hero__heading">
-          <span className="usa-hero__heading--alt">Hero callout:</span>Bring
-          attention to a project priority
+          <span className="usa-hero__heading--alt">On your side</span>
+            through all of life's important decisions
         </h2>
         <p>
-          Support the callout with some short explanatory text. You don’t need
-          more than a couple of sentences.
+          At the Consumer Financial Protection Bureau, we're dedicated to omaking sure you're treated fairly by banks, lenders and other financial institutions.
         </p>
-        <a className="usa-button" href="/">
-          Call to action
-        </a>
       </div>
     </div>
   </section>

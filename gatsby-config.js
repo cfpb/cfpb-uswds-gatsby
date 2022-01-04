@@ -1,36 +1,59 @@
 module.exports = {
   siteMetadata: {
     author: 'Foo',
-    title: `Agency Name`,
-    description: `Agency Name (EAC) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    title: `Consumer Financial Protection Bureau`,
+    description: `Consumer Financial Protection Bureau (EAC) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Aenean et sapien a leo auctor scelerisque quis nec magna. Sed dictum ante a risus vehicula facilisis.`,
     navigation: [
       {
-        items: [{ text: 'Home', link: '/' }],
-      },
-      {
-        items: [{ text: 'Blog', link: '/blog' }],
-      },
-      {
-        items: [{ text: 'Document', link: '/document' }],
-      },
-      {
+        title: 'Consumer Education',
         items: [
-          { text: 'Document with sidenav', link: '/document-with-sidenav' },
+          { text: 'Consumer Resources Overview', link: '/document-with-sidenav' },
+          { text: 'Resources for Practitioners', link: '/document-with-sidenav' },
+          { text: 'Coronavirus Resources', link: '/document-with-sidenav' },
+          { text: 'Consumer Complaint Database', link: '/document-with-sidenav' },
+          { text: 'Some other links...', link: '/document-with-sidenav' }
         ],
       },
       {
-        title: 'Document submenu',
+        title: 'Rules & Policy',
         items: [
-          { text: 'Navigation link', link: '/' },
-          { text: 'Navigation link', link: '/' },
-          { text: 'Navigation link', link: '/' },
+          { text: 'Final Rules', link: '/document-with-sidenav' },
+          { text: 'Interactive Regulations', link: '/document-with-sidenav' },
+          { text: 'Some other links...', link: '/document-with-sidenav' }
+        ],
+      },
+      {
+        title: 'Enforcement',
+        items: [
+          { text: 'Enforcement Actions', link: '/document-with-sidenav' },
+          { text: 'Some other links...', link: '/document-with-sidenav' }
+        ],
+      },
+      {
+        title: 'Compliance',
+        items: [
+          { text: 'Compliance Resources', link: '/document-with-sidenav' },
+          { text: 'Some other links...', link: '/document-with-sidenav' }
+        ],
+      },
+      {
+        title: 'Data & Research',
+        items: [
+          { text: 'Research & Reports', link: '/document-with-sidenav' },
+          { text: 'Some other links...', link: '/document-with-sidenav' }
+        ],
+      },
+      {
+        title: 'News',
+        items: [
+          { text: 'Press Releases', link: '/blog' },
+          { text: 'Some other links...', link: '/blog' }
         ],
       },
     ],
     secondaryLinks: [
-      { text: 'Secondary link', link: '/' },
-      { text: 'Another secondary link', link: '/' },
+      { text: 'Submit a complaint', link: '/document-with-sidenav' }
     ],
 
     /**
@@ -100,7 +123,7 @@ module.exports = {
       // ua: 'your-ua',
     },
   },
-  pathPrefix: process.env.BASEURL || '/',
+  pathPrefix: process.env.BASEURL || '/document-with-sidenav',
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
@@ -135,7 +158,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/federalist-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/cfpb-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-netlify-cms`,

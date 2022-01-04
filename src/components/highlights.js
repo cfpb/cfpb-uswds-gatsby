@@ -6,39 +6,41 @@ import circle from '../../node_modules/uswds/dist/img/circle-124.png';
 */
 
 const Highlights = () => (
-  <section className="usa-graphic-list usa-section usa-section--dark">
+  <section className="usa-graphic-list usa-section">
     <div className="grid-container">
       <div className="usa-graphic-list__row grid-row grid-gap">
         <div className="usa-media-block tablet:grid-col">
-          <img className="usa-media-block__img" src={circle} alt="Alt text" />
+          <img className="usa-media-block__img" src="https://files.consumerfinance.gov/f/images/cfpb_empowering_consumers.original.png" height="124" width="124" alt="Alt text" />
           <div className="usa-media-block__body">
             <h3 className="usa-graphic-list__heading">
-              Graphic headings can vary.
+              Protect yourself financially from coronavirus
             </h3>
             <p>
-              Graphic headings can be used a few different ways, depending on
-              what your landing page is for. Highlight your values, specific
-              program areas, or results.
+              The CFPB is committed to providing consumers with up-to-date information and resources to protect and manage their finances.
             </p>
+            <div>
+              <button className="usa-button">Access our resources</button>
+            </div>
           </div>
         </div>
         <div className="usa-media-block tablet:grid-col">
-          <img className="usa-media-block__img" src={circle} alt="Alt text" />
+          <img className="usa-media-block__img" src="https://files.consumerfinance.gov/f/images/cfpb_learning_through_data_and_research.original.png" height="124" width="124" alt="Alt text" />
           <div className="usa-media-block__body">
             <h3 className="usa-graphic-list__heading">
-              Stick to 6 or fewer words.
+              Shining a light on small business lending
             </h3>
             <p>
-              Keep body text to about 30 words. They can be shorter, but try to
-              be somewhat balanced across all four. It creates a clean
-              appearance with good spacing.
+              Small businesses are pillars of their communities—and of the American economy.
             </p>
+            <div>
+              <button className="usa-button">Learn more</button>
+            </div>
           </div>
         </div>
       </div>
-      <div className="usa-graphic-list__row grid-row grid-gap">
+      {/* <div className="usa-graphic-list__row grid-row grid-gap">
         <div className="usa-media-block tablet:grid-col">
-          <img className="usa-media-block__img" src={circle} alt="Alt text" />
+          <img className="usa-media-block__img" src="https://files.consumerfinance.gov/f/images/cfpb_rules_of_the_road.original.png" height="124" width="124" alt="Alt text" />
           <div className="usa-media-block__body">
             <h3 className="usa-graphic-list__heading">
               Never highlight anything without a goal.
@@ -51,7 +53,7 @@ const Highlights = () => (
           </div>
         </div>
         <div className="usa-media-block tablet:grid-col">
-          <img className="usa-media-block__img" src={circle} alt="Alt text" />
+          <img className="usa-media-block__img" src="https://files.consumerfinance.gov/f/images/cfpb_empowering_consumers.original.png" height="124" width="124" alt="Alt text" />
           <div className="usa-media-block__body">
             <h3 className="usa-graphic-list__heading">
               Could also have 2 or 6.
@@ -63,7 +65,7 @@ const Highlights = () => (
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   </section>
 );
