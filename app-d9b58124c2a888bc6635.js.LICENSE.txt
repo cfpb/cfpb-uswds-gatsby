@@ -1,0 +1,16 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+  * domready (c) Dustin Diaz 2014 - License MIT
+  */
+
+/*!
+ * domready (c) Dustin Diaz 2014 - License MIT
+ * ie10 fix - Mikael Kristiansson 2019
+ */
+
+/*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js */
