@@ -2,18 +2,22 @@
 
 Based on [18f's Federalist starter repo](https://github.com/18F/federalist-uswds-gatsby).
 
-### Running the application
+### Running the application locally
 
-#### With locally installed `node`
-    $ yarn
-    $ yarn develop
+```bash
+yarn
+yarn develop
+```
 
-To build but not serve the site, run `yarn build`.
-
-Open your web browser to [localhost:8000](http://localhost:8000/) to view your site.
+Open your web browser to [localhost:8000](http://localhost:8000/) to view the site.
 
 _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
+### Deploying the application to GH pages
+
+```bash
+yarn deploy
+```
 
 ## Technologies you should be familiarize yourself with
 
